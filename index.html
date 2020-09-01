@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Lista de exercícios</title>
+</head>
+<body>
+    <!-- Título principal -->
+    <header class="titulo-principal">
+        <h1>Exercícios de Web Design</h1>
+    </header>
+    <!-- Parte principal do site -->
+    <main id="exercicios">
+        <!-- Sections para os exercícios -->
+        <section class="primeiro-exercicio estilo-exercicios">
+            <!-- Título para os exercícios -->
+            <header>
+                <h1>Média digital</h1>
+            </header>
+            <!-- Input para os exercícios -->
+            <div class="grupo-item-ex1">
+                <form action="">
+                    <p class="item-ex1">
+                        <label for="numero1">Digite o primeiro número:</label></br>
+                        <input type="number" name="" id="numero1" placeholder="Primeiro número" required />
+                    </p>    
+                    <p class="item-ex1">
+                        <label for="numero2">Digite o segundo número:</label></br>
+                        <input type="number" name="" id="numero2" placeholder="Segundo número" required />
+                    </p>
+                    <!-- Botão que chama as funções de JavaScrip usando o onclick-->
+                    <button type="button" onclick="media()" class="button">Calcule</button>
+                    <!-- Div para as respostas vindas do JavaScript -->
+                    <div class="resposta">
+                        <p id="resposta-primeiro-exercicio">Resposta:</p>
+                    </div>
+                </form>
+            </div>        
+        </section>
+
+        <section class="segundo-exercicio estilo-exercicios">
+            <header>
+                <h1>Números ao quadrado</h1>
+            </header>
+            <div class="grupo-item-ex2">
+                <p class="item-ex2">
+                    <label for="quadrado1">Digite o primeiro número:</label></br>
+                    <input type="number" name="" id="quadrado1" placeholder="Primeiro número" />
+                </p>    
+                <p class="item-ex2">
+                    <label for="quadrado2">Digite o segundo número:</label></br>
+                    <input type="number" name="" id="quadrado2" placeholder="Segundo número" />
+                </p>
+                <p class="item-ex2">
+                    <label for="quadrado3">Digite o terceiro número:</label></br>
+                    <input type="number" name="" id="quadrado3" placeholder="Terceiro número" />
+                </p>
+                <p class="item-ex2">
+                    <label for="quadrado4">Digite o quarto número:</label></br>
+                    <input type="number" name="" id="quadrado4" placeholder="Quarto número" />
+                </p>
+                <p class="item-ex2">
+                    <label for="quadrado5">Digite o quinto número:</label></br>
+                    <input type="number" name="" id="quadrado5" placeholder="Quinto número" />
+                </p>
+    
+                <button type="button" onclick="calculaQuadrados()" class="button">Calcular</button>
+    
+                <div class="resposta">
+                    <p id="resposta-segundo-exercicio">Resposta:</p>
+                </div>
+        </section>
+        
+        <section class="terceiro-exercicio estilo-exercicios">
+            <header>
+                <h1>Maior e menor número</h1>
+            </header>
+                <div class="grupo-item-ex3">
+                    <p class="item-ex3">
+                        <label for="number1">Digite o primeiro número:</label></br>
+                        <input type="number" name="" id="number1" placeholder="Primeiro número" />
+                    </p>    
+                    <p class="item-ex3">
+                        <label for="number2">Digite o segundo número:</label></br>
+                        <input type="number" name="" id="number2" placeholder="Segundo número" />
+                    </p>
+                    <p class="item-ex3">
+                        <label for="number3">Digite o terceiro número:</label></br>
+                        <input type="number" name="" id="number3" placeholder="Terceiro número" />
+                    </p>
+                    <p class="item-ex3">
+                        <label for="number4">Digite o quarto número:</label></br>
+                        <input type="number" name="" id="number4" placeholder="Quarto número" />
+                    </p>
+                    <p class="item-ex3">
+                        <label for="number5">Digite o quinto número:</label></br>
+                        <input type="number" name="" id="number5" placeholder="Quinto número" />
+                    </p>
+        
+                    <button type="button" onclick="menorNumero()" class="button">Comparar</button>
+        
+                    <div class="resposta">
+                        <p id="resposta-terceiro-exercicio1"> Resposta:</p>
+                        <p id="resposta-terceiro-exercicio2"></p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="quarto-exercicio estilo-exercicios">
+            <header>
+                <h1>Comparar idades</h1>
+            </header>
+            <div class="grupo-item-ex4"> 
+                    <p class="item-ex4">
+                        <label for="name1">Digite o primeiro nome:</label></br>
+                        <input type="text" name="" id="name1" placeholder="Primeiro nome" />
+                    </p> 
+                    <p class="item-ex4">
+                        <label for="idade1">Digite a primeira idade:</label></br>
+                        <input type="number" name="" id="idade1" placeholder="Primeira idade" />
+                    </p>
+                    <p class="item-ex4">
+                        <label for="name2">Digite o segundo nome:</label></br>
+                        <input type="text" name="" id="name2" placeholder="Segundo nome" />
+                    </p>     
+                    <p class="item-ex4">
+                        <label for="idade2">Digite a segunda idade:</label></br>
+                        <input type="number" name="" id="idade2" placeholder="Segunda idade" />
+                    </p>
+         
+                    <p class="item-ex4">
+                        <label for="name3">Digite o terceiro nome:</label></br>
+                        <input type="text" name="" id="name3" placeholder="Terceiro nome" />
+                    </p> 
+                    <p class="item-ex4">
+                        <label for="idade3">Digite a terceira idade:</label></br>
+                        <input type="number" name="" id="idade3" placeholder="Terceira idade" />
+                    </p>
+         
+                    <p class="item-ex4">
+                        <label for="name4">Digite o quarto nome:</label></br>
+                        <input type="text" name="" id="name4" placeholder="Quarto nome" />
+                    </p> 
+                    <p class="item-ex4">
+                        <label for="idade4">Digite a quarta idade:</label></br>
+                        <input type="number" name="" id="idade4" placeholder="Quarta idade" />
+                    </p>
+                    <p class="item-ex4">
+                        <label for="name5">Digite o quinto nome:</label></br>
+                        <input type="text" name="" id="name5" placeholder="Quinto nome" />
+                    </p> 
+                    <p class="item-ex4">
+                        <label for="idade5">Digite a quinta idade:</label></br>
+                        <input type="number" name="" id="idade5" placeholder="Quinta idade" />
+                    </p>
+
+                <button class="button" type="button" onclick="idade()">Comparar</button>
+
+                <div class="resposta">
+                    <p id="resposta-quarto-exercicio">Resposta:</p>
+                </div>
+            </div>
+        </section>  
+    
+        <section class="quinto-exercicio estilo-exercicios">
+            <header>
+                <h1>Altura e sexo</h1>
+            </header>
+            <p class="item-ex5">
+                <label for="altura1">Digite a altura da primeira pessoa:</label>
+                <input type="number" name="" id="altura1" placeholder="EX: 1.80">
+            </p> 
+            <p class="item-ex5">
+                <label for="sexo1">Selecione o sexo:</label>
+                    <select id="sexo1" name="select">
+                        <option value="Feminino" selected>Feminino</option> 
+                        <option value="Masculino">Masculino</option>
+                    </select>
+            </p>
+            <p class="item-ex5">
+                <label for="altura2">Digite a altura da segunda pessoa:</label>
+                <input type="number" name="" id="altura2" placeholder="EX: 1.80">
+            </p>     
+            <p class="item-ex5">
+                <label for="sexo2">Selecione o sexo:</label>
+                    <select id="sexo2" name="select">
+                        <option value="Feminino" selected>Feminino</option> 
+                        <option value="Masculino">Masculino</option>
+                    </select>
+            </p>
+            <p class="item-ex5">
+                <label for="altura3">Digite a altura da segunda pessoa:</label>
+                <input type="number" name="" id="altura3" placeholder="EX: 1.80">
+            </p>     
+            <p class="item-ex5">
+                <label for="sexo3">Selecione o sexo:</label>
+                    <select id="sexo3" name="select">
+                        <option value="Feminino" selected>Feminino</option> 
+                        <option value="Masculino">Masculino</option>
+                    </select>
+            </p>
+            <p class="item-ex5">
+                <label for="altura4">Digite a altura da segunda pessoa:</label>
+                <input type="number" name="" id="altura4" placeholder="EX: 1.80">
+            </p>     
+            <p class="item-ex5">
+                <label for="sexo4">Selecione o sexo:</label>
+                    <select id="sexo4" name="select">
+                        <option value="Feminino" selected>Feminino</option> 
+                        <option value="Masculino">Masculino</option>
+                    </select>
+            </p>
+            <p class="item-ex5">
+                <label for="altura5">Digite a altura da segunda pessoa:</label>
+                <input type="number" name="" id="altura5" placeholder="EX: 1.80">
+            </p>
+            <p class="item-ex5">
+                <label for="sexo5">Selecione o sexo:</label>
+                    <select id="sexo5" name="select">
+                        <option value="Feminino" selected>Feminino</option> 
+                        <option value="Masculino">Masculino</option>
+                    </select>
+            </p>
+
+            <button class="button" type="button" onclick="sexoEaltura()">Comparar</button>
+            
+            <div class="resposta">
+                <p id="resposta-quinto-exercicio4">Resposta:</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer com poucas informações -->
+    <footer>
+        <p>&copy; CompanyMilenar</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
